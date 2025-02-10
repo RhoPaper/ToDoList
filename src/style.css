@@ -1,7 +1,32 @@
+@import url('https://cn.windfonts.com/wenfeng/fonts/ddjbt/regular/web/index.css');
+/* 此中文网页字体由文风字体（Windfonts）免费提供，您可以自由引用，请务必保留此授权许可标注 https://wenfeng.org/license */
+
 body {
   background: linear-gradient(
     to right,
     rgb(115, 65, 168),
     rgba(45, 114, 251, 1)
   );
+}
+
+a {
+  text-decoration: none;
+  color: aquamarine;
+  transition: 0.5s;
+  padding: 1px;
+}
+
+@media (hover: hover) {
+  a:hover {
+  background-color: hsla(160, 100%, 37%, 0.4);
+  }
+}
+
+/* font-weight: 字体权重值 决定字体粗细，存在多个变体时，使用变体值regular。
+注：若没有生效可使用 100 - 900 之间的值，若还是没生效说明该变体中没有匹配的样式
+font-style: 字体样式  normal | italic | oblique 控制字体风格，可展示倾斜样式 */
+#app {
+    font-family: 'wenfeng-ddjbt'; /* 固定值，不可修改 */
+    font-weight: regular;
+    font-style: normal;
 }
